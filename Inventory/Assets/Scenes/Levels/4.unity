@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -684,6 +685,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7dd1995e13cae234393bfe033df79262, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &987107487 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8060913774531313753, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+  m_PrefabInstance: {fileID: 2601030385017445483}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1037029757
@@ -1696,6 +1708,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090157543}
     m_Modifications:
+    - target: {fileID: 2250923084769197568, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: _clock
+      value: 
+      objectReference: {fileID: 987107487}
     - target: {fileID: 2563126701244995286, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1744,9 +1760,41 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1104586373}
+    - target: {fileID: 2786070344406776767, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786070344406776767, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786070344406776767, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786070344406776767, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786070344406776767, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 2943628520124222572, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
       propertyPath: m_Name
       value: Timer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060913774531313753, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060913774531313753, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060913774531313753, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8060913774531313753, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
       propertyPath: m_FillAmount
