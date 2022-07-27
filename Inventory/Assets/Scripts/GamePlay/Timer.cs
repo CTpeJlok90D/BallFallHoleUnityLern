@@ -3,24 +3,22 @@ using UnityEngine.Events;
 
 public class Timer : MonoBehaviour
 {
-	public bool _isTicking = false;
-
+	[SerializeField] private bool _isTicking = false;
+	[SerializeField] private bool _loop = false;
 	[SerializeField] private float _requiredTime = 10;
 	[SerializeField] private UnityEvent _done;
 
 	private float _correctTime = 0;
 
-	public void Enable()
-	{
-		_isTicking = true;
-	}
+	public float CorrectTime => _correctTime;
+
 	public void Disable()
 	{
 		_isTicking = false;
 	}
-	public void InvertState()
+	public void Enable()
 	{
-		_isTicking = !_isTicking;
+		_isTicking = true;
 	}
 
 	private void Update()
@@ -29,15 +27,20 @@ public class Timer : MonoBehaviour
 	}
 	private void Tick()
 	{
-		if (_isTicking)
+		if (_isTicking == false)
 		{
-			if(_correctTime >= _requiredTime)
-			{
-				_done.Invoke();
-				_correctTime = 0;
-				return;
-			}
-			_correctTime += Time.deltaTime;
+			return;
 		}
+		if (_correctTime >= _requiredTime)
+		{
+			_done.Invoke();
+			_correctTime = 0;
+			if (_loop == false)
+			{
+				Disable();
+			}
+			return;
+		}
+		_correctTime += Time.deltaTime;
 	}
 }
