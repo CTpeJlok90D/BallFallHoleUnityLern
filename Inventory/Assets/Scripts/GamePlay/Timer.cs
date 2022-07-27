@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Timer : MonoBehaviour
+public class Timer : MonoBehaviour, IEnableDisable
 {
 	[SerializeField] private bool _isTicking = false;
 	[SerializeField] private bool _loop = false;
@@ -11,6 +11,7 @@ public class Timer : MonoBehaviour
 	private float _correctTime = 0;
 
 	public float CorrectTime => _correctTime;
+	public float RequiredTime => _requiredTime;
 
 	public void Disable()
 	{
