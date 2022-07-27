@@ -550,7 +550,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1104586373}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1696,6 +1696,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090157543}
     m_Modifications:
+    - target: {fileID: 1506744708149378800, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2563126701244995286, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1744,12 +1748,52 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1104586373}
+    - target: {fileID: 2786070344406776767, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786070344406776767, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786070344406776767, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786070344406776767, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786070344406776767, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786070344406776767, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786070344406776767, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786070344406776767, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 2943628520124222572, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
       propertyPath: m_Name
       value: Timer
       objectReference: {fileID: 0}
     - target: {fileID: 8060913774531313753, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: m_Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060913774531313753, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
       propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611827840723210436, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
+      propertyPath: _loop
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8611827840723210436, guid: 7ced0d817f6321e40a447349169bb853, type: 3}
